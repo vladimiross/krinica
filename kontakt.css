@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100px  100% 150px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(../img/snow.jpg);
+    background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+#logo{
+    text-align: left;
+    padding: 25px 0px 0px 150px;
+   
+}
+header {
+    position: sticky;
+    top: 0;
+}
+.burger li {
+    
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding:0 20px;
+ 
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.burger  ul{
+    clear: right;
+    padding-top: 40px;
+    float: right;
+    margin: 0;
+    display: flex;
+}
+.burger{
+    text-align: right;
+    display: inline;
+    
+}
+label {
+    margin: 0 20px 0 0;
+    font-size: 2rem;
+    display: none;
+    width: 22px;
+    float: right;
+   
+}
+#toggle{
+display: none;
+}
+.burger >ul>li> a:hover{
+    color: gray;
+}
+.container{
+    display: flex;
+}
+#forma{
+    padding-left: 10px;
+}
+ h3{
+    color: #b3e7b4;
+    padding-left: 20px;
+}
+#forma > label{
+    color: #b3e7b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    width: auto;
+    padding: 0 5px;
+    margin: 0;
+    float: left;
+}
+#forma > label[for="odlazak"]{
+    color: #cbfc8e;
+    background: black;
+}
+#forma > label[for="nocenja"]{
+    color: #cbfc8e;
+    background: black;
+}
+#forma > label[for="cena"]{
+    color: #ffd500;
+    background: black;
+}
+.fa{
+    padding: 20px 0 0 10px;
+    color: white;
+    text-align: center;
+}
+.form-style-9{
+    width: 60%;
+	background: transparent;
+	padding: 20px;
+	margin: 20px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    height: 400px;
+}
+ .form-style-9 ul{
+	padding: 0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 30px;
+    min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+#social i{
+    padding-top: 30px;
+    color: white;
+    -webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+#social:hover i{
+    color: blue;
+    -moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+footer p {
+    color: whitesmoke;
+}
+body > header:nth-child(1n) {
+    background-color: #70B9B0;
+    grid-column: 1 / -1;
+}
+
+body > div:nth-child(2n){
+    display: flex;
+    grid-column: 1 / -1;
+    background-color: transparent;
+}
+body >  div > nav:first-child{
+    grid-column: 1 / 2;
+    background-color: transparent; 
+  }
+  body >  div > main:last-child{
+    width: 100%;
+    grid-column: 2 / -1;
+    background-color: transparent; 
+  }
+  body > footer:nth-child(3n) {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  background-color: #242424;
+  grid-column: 1 / -1;
+}
+@media screen and (max-width: 780px){
+    #logo{
+        float: left;
+         padding-left: 15px;
+         
+     }
+ label{
+     display: block;
+     cursor: pointer;
+     color: white;
+     padding-top: 25px;
+     }
+ .burger > ul{
+     text-align: center;
+     width: 100%;
+     display: none;
+ }
+ .burger ul li a{
+     text-decoration: none;
+     display: block;
+     margin: 0;
+     padding: 10px 0;
+ }
+ #toggle:checked + ul,li{
+     display: block;
+     width: 100%;
+     background-color: #70B9B0;
+     border-bottom: 1px solid grey;
+     padding-top: 25px;
+ }
+ .form-style-9 > ul > li{
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+}
+@media screen and (max-width: 400px){
+    #logo{
+       float: left;
+        padding-left: 15px;
+        
+    }
+label{
+    display: block;
+    cursor: pointer;
+    color: white;
+    padding-top: 25px;
+    }
+.burger > ul{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.burger ul li a{
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+}
+#toggle:checked + ul,li{
+    display: block;
+    width: 100%;
+    background-color: #70B9B0;
+    border-bottom: 1px solid grey;
+    padding-top: 25px;
+}
+.form-style-9 > ul > li{
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+/*.container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1 / -1;
+}
+.container > nav > #form {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1 / -1;
+}
+.container > main {
+    position: relative;
+    left: 0;
+    width: 100%;
+    float: left;
+}*/
+
+}

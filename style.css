@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr,1fr, 400px));
+    grid-template-rows: 100px 500px auto 400px auto auto 150px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#headslika{
+    background-image: url("../img/kuca1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slika2 h3 {
+    color: white;
+    padding-top: 150px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+#uvacslika{
+    background-image: url("../img/uvac.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sup{
+    background-image: url("../img/Beloglavi.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slika2{
+    background-image: url("../img/img7.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shiva
+{
+background: transparent;
+flex-direction: column;
+padding-top: 60px;
+}
+span
+{
+  
+  color:#242424;
+  padding:60px 0 0 190px;
+  font-size:22px;
+}
+#logo{
+    text-align: left;
+    padding: 25px 0px 0px 150px;
+   
+}
+main{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#zvezdice{
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    width: 46%;
+    color: gray;
+    align-content: center;
+    
+}
+
+#kucica{
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    width: 46%;
+    color: gray;
+    align-content: center;
+}
+.fa {
+    color: gray;
+    
+}
+header {
+    position: sticky;
+    top: 0;
+}
+.burger li {
+    
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding:0 20px;
+ 
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.burger  ul{
+    clear: right;
+    padding-top: 40px;
+    float: right;
+    margin: 0;
+    display: flex;
+}
+.burger{
+    text-align: right;
+    display: inline;
+    
+}
+label {
+    margin: 0 20px 0 0;
+    font-size: 2rem;
+    display: none;
+    width: 22px;
+    float: right;
+   
+}
+#toggle{
+display: none;
+}
+.burger >ul>li> a:hover{
+    color: gray;
+}
+#Okuci {
+    text-align: center;
+    color: gray;
+    align-content: center;
+    justify-content: center;
+}
+#Okuci h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+ .wtd {
+    padding: 0;
+    text-align: center;
+    display: block;
+    list-style-type: none;
+    line-height: 2em;
+}
+#mapa {
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+iframe {
+    padding-top: 30px;
+}
+
+#social i{
+    padding-top: 30px;
+    color: white;
+    -webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+#social:hover i{
+    color: blue;
+    -moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+footer p {
+    color: whitesmoke;
+}
+a.scrollup {
+    background:#70B9B0;
+}
+a.scrollup {
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    opacity: 0.5;
+}
+body > header:nth-child(1) {
+    background-color: #70B9B0;
+    grid-column: 1 / -1;
+}
+body > #headslika:nth-child(2n) {
+    grid-column: 1 / -1;
+    background-color: transparent;	
+  }
+  
+  body > main > #zvezdice:nth-child(3n) {
+      display: flex;
+    background-color: transparent;
+    grid-column: 1 / 2;
+  }
+  body > main > #kucica:nth-child(4n) {
+   
+  background-color: transparent;
+  grid-column: 2 / 3;
+}
+  
+  body > #slika2:nth-child(5n) {
+        background-color: whitesmoke;
+        grid-column: 1 / -1;
+  }
+  body > #Okuci:nth-child(6n) {
+      background-color: whitesmoke;
+      grid-column: 1 / -1;
+  }
+  body > #mapa:nth-child(7n) {
+      background-color: whitesmoke;
+      grid-column: 1 / -1;
+  }
+  body > footer:nth-child(7n) {
+        background-color: #242424;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        grid-column: 1 / -1;
+  }
+  @media screen and (max-width: 780px){
+    #logo{
+        float: left;
+         padding-left: 15px;
+         
+     }
+ label{
+     display: block;
+     cursor: pointer;
+     color: white;
+     padding-top: 25px;
+     }
+ .burger > ul{
+     text-align: center;
+     width: 100%;
+     display: none;
+ }
+ .burger ul li a{
+     text-decoration: none;
+     display: block;
+     margin: 0;
+     padding: 10px 0;
+ }
+ #toggle:checked + ul,li{
+     display: block;
+     width: 100%;
+     background-color: #70B9B0;
+     border-bottom: 1px solid grey;
+     padding-top: 25px;
+ }
+ .wtd > li{
+    background-color: white;
+    border: none;
+}
+#mapa > iframe {
+    white-space: nowrap;
+    width: 100%;
+}
+#shiva span {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 5px 0 5px 5px; 
+    align-items: center;  
+}
+  }
+  @media screen and (max-width: 400px){
+      #logo{
+         float: left;
+          padding-left: 15px;
+          
+      }
+  label{
+      display: block;
+      cursor: pointer;
+      color: white;
+      padding-top: 25px;
+      }
+  .burger > ul{
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+  .burger ul li a{
+      text-decoration: none;
+      display: block;
+      margin: 0;
+      padding: 10px 0;
+  }
+  #toggle:checked + ul,li{
+      display: block;
+      width: 100%;
+      background-color: #70B9B0;
+      border-bottom: 1px solid grey;
+      padding-top: 25px;
+  }
+    main{
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+  }
+    #zvezdice{
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0;
+        line-height: 1.2rem;
+    }
+    #kucica{
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0;
+        line-height: 1.2rem;
+    }
+    #zvezdice > .fa{
+        padding-top: 10px;
+        font-size: 3rem;
+        align-content: center;
+        justify-content: center;
+    }
+    #kucica > .fa{
+        font-size: 3rem;
+        align-content: center;
+        justify-content: center;
+    }
+    .wtd > li{
+        background-color: white;
+        border: none;
+    }
+    #shiva span {
+        display: flex;
+        font-size: 0.8rem;
+        padding: 5px 0 5px 5px; 
+        align-items: center;  
+    }
+    #slika2 > h3 {
+        font-size: 1rem;
+    }
+    #Okuci > h2  {
+        font-size: 1rem;
+    }
+    #Okuci > p{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    #Okuci > center > p{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .wtd {
+        font-size: 0.8rem;
+    }
+    #mapa > h1{
+        font-size: 1rem;
+    }
+    #mapa > p{
+        font-size: 0.8rem;
+    }
+    #mapa > .fa{
+        font-size: 0.8rem;
+    }
+    #mapa > iframe {
+        white-space: nowrap;
+        width: 100%;
+    }
+  }
+ 

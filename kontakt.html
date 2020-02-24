@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Krinica | Kontakt</title>
+    <link href="css/kontakt.css" rel="stylesheet" type="text/css"/>
+    <script src="https://use.fontawesome.com/bbacacabc7.js"></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logok.png">
+        <div class="burger">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                        <li><a href="indeks.html">HOME</a></li>
+                        <li><a href="Uvac.html">UVAC</a></li>
+                        <li><a href="galerija.html">GALERIJA</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+              </div>
+    </header>
+   <div class=".container">
+    <nav>
+        <h3>Kalkulator<br>Boravka</h3>
+        <form id="forma">
+         <label for="dnevno">Cena sobe po danu (EUR):</label><br>
+         <input type="text" name="dnevno" value="25.00" readonly><br><br>
+         <label for="dolazak">Datum dolaska:</label><br>
+         <input type="date" name="dolazak"><br>
+         <label for="odlazak">Datum odlaska:</label><br>
+         <input type="date" name="odlazak"><br><br>
+         <input type="button" onclick="ukupnaCena()" value="Izračunaj"><br><br>
+         <label for="nocenja">Broj noćenja:</label><br>
+         <input type="text" name="dana"><br>
+         <label for="cena">Cena boravka (EUR):</label><br>
+         <input type="text" name="cena">  
+        </form>
+        <i class="fa fa-phone "> +381 63 1111 222</i>
+     
+      <br>
+      <i class="fa fa-location-arrow "> GPS 43 26 24 N 19 49 28 E</i>
+      
+      <br>
+      <i class="fa fa-envelope "> Email: zlatar0@gmail.com</i>
+    </nav>
+    <main>
+        <form class="form-style-9">
+            <ul>
+            <li>
+                <input type="text" name="field1" class="field-style field-split align-left" placeholder="Ime" />
+                <input type="text" name="field2" class="field-style field-split align-right" placeholder="Prezime" />
+            
+            </li>
+            <li>
+                <input type="text" name="field3" class="field-style field-split align-left" placeholder="Telefon" />
+                <input type="email" name="field4" class="field-style field-split align-right" placeholder="Email" />
+            </li>
+            <li>
+            <input type="text" name="field3" class="field-style field-full align-none" placeholder="Naslov" />
+            </li>
+            <li>
+            <textarea name="field5" class="field-style" placeholder="Poruka"></textarea>
+            </li>
+            <li>
+            <input type="submit" value="Pošalji Poruku" />
+            </li>
+            </ul>
+            </form>
+    </main>
+</div>
+    <footer>
+        <a id="social" href="https://www.facebook.com/zlatarplaninaa/" target="_blank"><i class="fa fa-facebook fa-2x mar-bot20" aria-hidden="true"></i></a>
+        <p>Copyright © 2019 Krinica</p>
+        <p>Made by Vladimir</p>
+    </footer>
+</body>
+</html>

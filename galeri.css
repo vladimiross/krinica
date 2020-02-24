@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #70B9B0;
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+#logo{
+    text-align: left;
+    padding: 25px 0px 0px 150px;
+   
+}
+.burger li {
+    
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+}
+.burger  ul{
+    clear: right;
+    padding-top: 40px;
+    float: right;
+    margin: 0;
+    display: flex;
+}
+.burger{
+    text-align: right;
+    display: inline;
+    
+}
+label {
+    margin: 0 20px 0 0;
+    font-size: 2rem;
+    display: none;
+    width: 22px;
+    float: right;
+   
+}
+#toggle{
+display: none;
+}
+.burger >ul>li> a:hover{
+    color: gray;
+}
+.container {
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.verti {
+    grid-row: span 2;
+}
+.horizon {
+    grid-column: span 2;
+}
+.container > div > a > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > div > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+html, body {
+    background-color: white;
+    margin: 10px;
+}
+h1{
+    color: #70B9B0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 76px;
+}
+footer{
+    background-color: #242424;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 15px;
+    margin-top: 10px;
+    color: white;
+}
+#social i{
+    padding-top: 30px;
+    color: white;
+    -webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+#social:hover i{
+    color: blue;
+    -moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+a.scrollup {
+    background:#70B9B0;
+}
+a.scrollup {
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    opacity: 0.5;
+}
+@media screen and (max-width: 780px){
+    #logo{
+        float: left;
+         padding-left: 15px;
+         
+     }
+ label{
+     display: block;
+     cursor: pointer;
+     color: white;
+     padding-top: 25px;
+     }
+ .burger > ul{
+     text-align: center;
+     width: 100%;
+     display: none;
+ }
+ .burger ul li a{
+     text-decoration: none;
+     display: block;
+     margin: 0;
+     padding: 10px 0;
+ }
+ #toggle:checked + ul,li{
+     display: block;
+     width: 100%;
+     background-color: #70B9B0;
+     border-bottom: 1px solid grey;
+     padding-top: 25px;
+ }
+@media screen and (max-width: 400px){
+    #logo{
+       float: left;
+        padding-left: 15px;
+        
+    }
+label{
+    display: block;
+    cursor: pointer;
+    color: white;
+    padding-top: 25px;
+    }
+.burger > ul{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.burger ul li a{
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+}
+#toggle:checked + ul,li{
+    display: block;
+    width: 100%;
+    background-color: #70B9B0;
+    border-bottom: 1px solid grey;
+    padding-top: 25px;
+}
+}
